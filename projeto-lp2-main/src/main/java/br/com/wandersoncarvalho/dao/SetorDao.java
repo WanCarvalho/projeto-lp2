@@ -11,6 +11,11 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class SetorDao implements Dao<Setor>{
+
+    public SetorDao(){
+        //chamo db.adicionar para popular o banco com os setores
+    }
+    
     DatabaseI db = Database.getInstance();
     public abstract void adicionar(T entidade) throws EntidadeJaExisteException;
     public abstract void atualizar(T entidade) throws EntidadeNaoEncontradaException;
