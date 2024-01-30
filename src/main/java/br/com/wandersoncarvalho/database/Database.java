@@ -28,7 +28,7 @@ public class Database implements DatabaseI {
 
     @Override
     public <T extends Entidade> void adicionar(T entidade) throws EntidadeJaExisteException{
-        
+        // implementar método para adicionar entidade ao banco
 
         throw new EntidadeJaExisteException();
     }
